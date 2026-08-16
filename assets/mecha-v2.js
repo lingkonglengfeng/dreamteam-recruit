@@ -1,0 +1,2 @@
+document.querySelectorAll('.spotlight').forEach(card=>card.addEventListener('pointermove',event=>{const rect=card.getBoundingClientRect();card.style.setProperty('--mx',`${event.clientX-rect.left}px`);card.style.setProperty('--my',`${event.clientY-rect.top}px`)}));
+const nav=document.querySelector('.nav');let lastY=0;window.addEventListener('scroll',()=>{const y=window.scrollY;nav.style.transform=`translateX(-50%) translateY(${y>lastY&&y>180?'-95px':'0'})`;lastY=y},{passive:true});
