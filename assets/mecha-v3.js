@@ -1,0 +1,2 @@
+const firstScreen=document.querySelector('.hero,.direction-hero');const followingContent=document.querySelector('main');
+if(firstScreen&&followingContent&&matchMedia('(min-width:901px) and (min-height:700px)').matches){let switching=false;firstScreen.addEventListener('wheel',event=>{if(event.deltaY>28&&!switching){switching=true;followingContent.scrollIntoView({behavior:'smooth'});setTimeout(()=>switching=false,700)}},{passive:true})}
