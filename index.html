@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="南华大学梦之队 2026 招新" />
+    <title>南华大学梦之队｜2026 招新</title>
+    <style>
+      :root {
+        --navy: #0d2b58;
+        --blue: #1768c4;
+        --sky: #eaf4ff;
+        --gold: #ffc93d;
+        --ink: #182538;
+        --muted: #607086;
+        --white: #ffffff;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        color: var(--ink);
+        font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+        background: #f6f9fd;
+      }
+      .hero {
+        overflow: hidden;
+        position: relative;
+        padding: 76px 20px 108px;
+        color: var(--white);
+        text-align: center;
+        background: linear-gradient(135deg, var(--navy), var(--blue));
+      }
+      .hero::before, .hero::after {
+        position: absolute;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        content: "";
+        opacity: .16;
+        background: var(--gold);
+      }
+      .hero::before { top: -190px; left: -100px; }
+      .hero::after { right: -140px; bottom: -220px; }
+      .hero-content { position: relative; max-width: 760px; margin: auto; }
+      .tag {
+        display: inline-block;
+        padding: 8px 14px;
+        border: 1px solid rgba(255, 255, 255, .55);
+        border-radius: 99px;
+        font-size: 14px;
+        letter-spacing: .08em;
+      }
+      h1 { margin: 22px 0 12px; font-size: clamp(38px, 8vw, 66px); letter-spacing: .04em; }
+      .slogan { margin: 0 auto; max-width: 620px; font-size: clamp(16px, 3vw, 20px); line-height: 1.8; }
+      .button {
+        display: inline-block;
+        margin-top: 28px;
+        padding: 15px 30px;
+        border-radius: 99px;
+        color: #2c260d;
+        background: var(--gold);
+        font-weight: 700;
+        text-decoration: none;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
+      }
+      main { max-width: 960px; margin: -48px auto 0; padding: 0 20px 52px; }
+      .card {
+        margin-bottom: 20px;
+        padding: 28px;
+        border-radius: 20px;
+        background: var(--white);
+        box-shadow: 0 12px 34px rgba(25, 54, 93, .11);
+      }
+      h2 { margin: 0 0 15px; color: var(--navy); font-size: 25px; }
+      p { line-height: 1.9; }
+      .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+      .direction { padding: 20px; border-radius: 15px; background: var(--sky); }
+      .direction h3 { margin: 0 0 9px; color: var(--blue); }
+      .direction p { margin: 0; color: var(--muted); }
+      .schedule { margin: 0; padding-left: 22px; }
+      .schedule li { margin: 10px 0; line-height: 1.7; }
+      .notice { padding: 14px 16px; border-left: 4px solid var(--gold); border-radius: 6px; background: #fff9e6; color: #6d5714; }
+      footer { padding: 0 20px 38px; color: var(--muted); text-align: center; }
+      @media (max-width: 680px) {
+        .hero { padding-top: 58px; }
+        .grid { grid-template-columns: 1fr; }
+        .card { padding: 22px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-content">
+        <span class="tag">南华大学 · 梦之队</span>
+        <h1>2026 招新</h1>
+        <p class="slogan">心怀热爱，敢于创造。我们正在寻找愿意一起把想法变成现实的你。</p>
+        <!-- 将下面 #apply 替换为你的问卷链接，例如 https://xxx.feishu.cn/... -->
+        <a class="button" href="#apply">立即报名</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>我们是谁</h2>
+        <p>南华大学梦之队是一支热爱创新、重视实践与协作的学生团队。我们一起学习、一起攻克问题，也一起在项目中成长。</p>
+      </section>
+
+      <section class="card">
+        <h2>招募方向</h2>
+        <div class="grid">
+          <article class="direction">
+            <h3>💻 技术组</h3>
+            <p>嵌入式、硬件、软件、算法与项目开发。</p>
+          </article>
+          <article class="direction">
+            <h3>🎨 设计组</h3>
+            <p>视觉设计、建模、视频制作与品牌宣传。</p>
+          </article>
+          <article class="direction">
+            <h3>📣 运营组</h3>
+            <p>活动策划、社群运营、对外合作与组织协调。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>招新安排</h2>
+        <ul class="schedule">
+          <li>报名截止：请在这里填写截止日期</li>
+          <li>招新宣讲：请在这里填写时间和地点</li>
+          <li>面试通知：将通过报名时留下的联系方式发送</li>
+        </ul>
+      </section>
+
+      <section class="card" id="apply">
+        <h2>报名与咨询</h2>
+        <p class="notice">发布前，请把本区域改成真实的飞书问卷、腾讯问卷或金数据报名链接。</p>
+        <p>咨询微信：<strong>请填写团队微信号</strong><br />联系邮箱：<strong>请填写团队邮箱</strong></p>
+        <!-- 将 href 中的 # 换成你的报名表链接 -->
+        <a class="button" href="#" target="_blank" rel="noopener">填写报名表</a>
+      </section>
+    </main>
+
+    <footer>南华大学梦之队 · 期待与你相见</footer>
+  </body>
+</html>
