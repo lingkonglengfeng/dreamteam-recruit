@@ -1,2 +1,4 @@
 const firstScreen=document.querySelector('.hero,.direction-hero');const followingContent=document.querySelector('main');
 if(firstScreen&&followingContent&&matchMedia('(min-width:901px) and (min-height:700px)').matches){let switching=false;firstScreen.addEventListener('wheel',event=>{if(event.deltaY>28&&!switching){switching=true;followingContent.scrollIntoView({behavior:'smooth'});setTimeout(()=>switching=false,700)}},{passive:true})}
+const directionNodes=document.querySelectorAll('.hero-v2 .node[href^="#role-"]');let highlightedRole;
+directionNodes.forEach(node=>node.addEventListener('click',event=>{const target=document.querySelector(node.getAttribute('href'));if(!target)return;event.preventDefault();target.scrollIntoView({behavior:'smooth',block:'center'});history.replaceState(null,'',node.getAttribute('href'));highlightedRole?.classList.remove('direction-highlight');target.classList.add('direction-highlight');highlightedRole=target}));

@@ -5,3 +5,9 @@
 .hero-v2 .scanline::before{position:absolute;left:0;right:0;top:-16%;height:16%;content:"";background:linear-gradient(to bottom,transparent 0,#ff5a2802 35%,#ff5a280e 72%,#ff8a5c29 76%,#ff5a2806 80%,transparent 100%);filter:blur(.8px);animation:heroScanSweep 5.5s linear infinite;will-change:transform}
 @keyframes heroScanSweep{0%{transform:translateY(0)}100%{transform:translateY(725%)}}
 @media(prefers-reduced-motion:reduce){.hero-v2 .scanline::before{animation:none;display:none}}
+.hero-v2 .node{z-index:4;text-decoration:none;cursor:pointer;transition:transform .25s ease,color .25s ease,border-color .25s ease,background .25s ease,box-shadow .25s ease}
+.hero-v2 .node:hover,.hero-v2 .node:focus-visible{color:#fff;border-color:#ff7042;background:#171116;box-shadow:0 0 12px #ff5a2860,0 0 28px #ff5a282d;transform:scale(1.08)}
+.hero-v2 .node:focus-visible{outline:1px solid #ff8a64;outline-offset:3px}
+.role.direction-highlight,.role:target{border-color:#ff6a3a;box-shadow:0 0 0 1px #ff5a285c,0 18px 52px #ff5a2829;transform:translateY(-7px)}
+.role.direction-highlight::before,.role:target::before{opacity:1;background:radial-gradient(360px circle at 50% 35%,#ff5a2832,transparent 65%)}
+@media(prefers-reduced-motion:reduce){.hero-v2 .node,.role.direction-highlight,.role:target{transition:none;transform:none}}
