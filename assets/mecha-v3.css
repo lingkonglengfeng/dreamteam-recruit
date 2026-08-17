@@ -2,6 +2,6 @@
 .duty-list{display:grid;gap:10px}.duty-item{position:relative;min-height:78px;padding:14px 15px 14px 58px;border:1px solid #30353d;background:#0c0f13;transition:.25s}.duty-item:hover{border-color:#ff5a28;transform:translateX(5px)}.duty-item b{position:absolute;left:16px;top:16px;color:#ff5a28;font:15px Consolas}.duty-item strong{display:block;margin-bottom:5px;font-size:15px}.duty-item span{display:block;color:#939da9;font-size:13px;line-height:1.55}.module-grid .module:first-child{background:linear-gradient(145deg,#12161b,#0c0f13)}
 @media(max-width:900px),(max-height:699px){html{scroll-snap-type:none}.duty-item{min-height:auto}}
 .hero-v2 .scanline{inset:0;overflow:hidden;background:none;animation:none;pointer-events:none}
-.hero-v2 .scanline::before{position:absolute;left:0;right:0;top:-16%;height:16%;content:"";background:linear-gradient(to bottom,transparent 0,#ff5a2808 35%,#ff5a2840 72%,#ff8a5c99 76%,#ff5a2816 80%,transparent 100%);filter:blur(.2px);animation:heroScanSweep 5.5s linear infinite;will-change:transform}
+.hero-v2 .scanline::before{position:absolute;left:0;right:0;top:-16%;height:16%;content:"";background:linear-gradient(to bottom,transparent 0,#ff5a2804 35%,#ff5a281c 72%,#ff8a5c4d 76%,#ff5a280b 80%,transparent 100%);filter:blur(.6px);animation:heroScanSweep 5.5s linear infinite;will-change:transform}
 @keyframes heroScanSweep{0%{transform:translateY(0)}100%{transform:translateY(725%)}}
 @media(prefers-reduced-motion:reduce){.hero-v2 .scanline::before{animation:none;display:none}}
