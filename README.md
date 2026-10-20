@@ -15,3 +15,7 @@
 1. 在 GitHub Desktop 中通过 `File` → `Add local repository...` 选择本文件夹。
 2. 提交后点击 `Publish repository`，并保持仓库公开。
 3. 打开 GitHub 仓库网页，在 `Settings` → `Pages` 中选择 `Deploy from a branch`、`main`、`/(root)`，然后保存。
+
+## 成员开源项目
+
+- [校赛倒立摆小车](https://github.com/lingkonglengfeng/nanhua-pendulum-car)：由 `lingkonglengfeng` 分享的南华电赛运控组校赛项目，包含 STM32F103 固件、自制转接板、机械建模与调试复盘。网站首页的电赛介绍和电控方向页均设有入口。
